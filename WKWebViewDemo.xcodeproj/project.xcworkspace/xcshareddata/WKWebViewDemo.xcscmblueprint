@@ -1,25 +1,25 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4dcf29bf-242f-f041-a479-ac6b5877a8e4++9771",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4dcf29bf-242f-f041-a479-ac6b5877a8e4++5728",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++9771" : {
+    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++5728" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++9771" : 0
+    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++5728" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B049F840-4C87-462C-9DA6-A1F478C648AC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++9771" : "MBcaijing\/"
+    "4dcf29bf-242f-f041-a479-ac6b5877a8e4++5728" : "..\/..\/..\/.."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "WKWebViewDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "源码\/MBcaijing\/MBcaijing\/ViewControllers\/WKWebViewDemo\/WKWebViewDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WKWebViewDemo.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.252\/svn\/App",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4dcf29bf-242f-f041-a479-ac6b5877a8e4++9771"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4dcf29bf-242f-f041-a479-ac6b5877a8e4++5728"
     }
   ]
 }

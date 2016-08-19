@@ -1,0 +1,450 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" charset="UTF-8">
+    <style rel="stylesheet" type="text/css">
+    body {
+        padding: 0px;
+        color: #666666;
+    }
+    
+    .bq {
+        width: 46px;
+        height: 25px;
+        background: #f0f0f0;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 5px;
+        color: #727272;
+    }
+    
+    hr {
+        border: 1px solid #ededed;
+        margin: 15px 0px;
+    }
+    
+    .container {
+        width: 96%;
+        margin: 0px auto;
+    }
+    
+    .containerTag {
+        margin-top: 20px;
+    }
+    
+    .containerContent {
+        width: 96%;
+        margin: 0px auto;
+        margin-top: 15px;
+        border-top: 1px dashed #a4a4a4;
+        padding-top: 15px;
+        font-family: PingFangSC-Regular;
+        text-align: auto;
+    }
+    
+    .containerNews {
+        width: 96%;
+        height: 100px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    
+    .newsTitle {
+        font-size: 14px;
+        color: #a4a4a4;
+    }
+    
+    .newsTitle > span {
+        margin-left: 15px;
+    }
+    
+    .abountNewTitle {
+        font-size: 14px;
+        color: #f74f4f;
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        width: 57px;
+        margin-top: 20px;
+    }
+    
+    .AbountImageDiv {
+        float: left;
+        width: 24%;
+        max-width: 100px;
+    }
+    
+    .AbountImage {
+        width: 100%;
+        height: auto;
+    }
+    
+    .abountNewsContentDiv {
+        float: left;
+        width: 74%;
+        margin-left: 2%;
+        margin-bottom: 15px;
+    }
+    
+    .abountNewsContent {
+        height: 60px;
+        width: 100%;
+        margin: 0px;
+        font-size: 14px;
+        color: #4d4d4d;
+        text-align: justify;
+        font-family: MicrosoftYaHei;
+        padding-top: 4px;
+    }
+    
+    .abountNewsTime {
+        height: 18px;
+        margin: 0px;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #aaaaaa;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
+    
+    .abountNewsType {
+        float: right;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .plTitle {
+        font-size: 14px;
+        color: #f74f4f;
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        width: 57px;
+        margin-top: 20px;
+    }
+    
+    .im-com {
+        border-radius: 25px;
+        max-width: 50px;
+        max-height: 50px;
+        width: 50px;
+        height: 50px;
+        background: url(http://static.smartisanos.cn/os/img/useful/setting_icon_8162a4d193@2x.png) no-repeat top left scroll;
+        background-size: cover;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .hfRow {
+        width: 100%;
+        margin: 0px auto;
+    }
+    
+    .hfRowHeadIcon {
+        float: left;
+        width: 18%;
+    }
+    
+    .hfRowCell {
+        float: left;
+        width: 2%;
+    }
+    
+    .hfRowContent {
+        float: left;
+        width: 74%;
+    }
+    
+    .hfRowContent1 {
+        margin: 10px 0px;
+        color: #5691c9;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
+    
+    .hfRowContent1 > span > a > i {
+        margin-right: 1px;
+    }
+    
+    .hfRowContent1 > span {
+        float: right;
+    }
+    
+    .upZhan {
+        margin-right: 10px;
+        color: #aaaaaa;
+    }
+    
+    .downZhan {
+        color: #aaaaaa;
+    }
+    
+    .hfRowContent2 {
+        margin: 10px 0px;
+        color: #878787;
+        font-family: PingFangSC-Regular;
+        font-size: 13px;
+        letter-spacing: 0px;
+        text-align: justify;
+        table-layout: fixed;
+        word-break: break-all;
+        overflow: hidden;
+    }
+    
+    .hfRowContent3 {
+        margin: 10px 0px;
+        color: #aaaaaa;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
+    
+    .hfRowContent3 > a {
+        color: #aaaaaa;
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body[-bodyBGColor-]>
+    <div class="container" id="content">
+        <div class="row">
+            <!--标题-->
+            <p style="font-size: 18px;"><strong>[-newsTitle-]</strong></p>
+            <!--标题-->
+            <p class="newsTitle">[-newsDate-]<span>[-newsAuthor-]</span></p>
+        </div>
+        <!--内容-->
+        <div id="containerContent" class="containerContent">[-newsContent-]</div>
+        <div class="containerTag">[-newsTags-]</div>
+        <!--循环新闻-->
+        <p class="abountNewTitle">相关新闻</p>
+        [-aboutNewsList-]
+        <p class="plTitle">最新评论</p>
+        <!--循环回复-->
+        <div id="hfList">[-newshfList-]</div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:100%;clear: both;"><span id="loadMore">查看更多评论</span></div>
+    </body>
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.js" charset="UTF-8"></script>
+    <script>
+    // WebViewJavascriptBridge 初始化
+    function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) {
+            return callback(WebViewJavascriptBridge);
+        }
+        if (window.WVJBCallbacks) {
+            return window.WVJBCallbacks.push(callback);
+        }
+        window.WVJBCallbacks = [callback];
+
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() {
+            document.documentElement.removeChild(WVJBIframe)
+        }, 0)
+    }
+
+    //WebViewJavascriptBridge 绑定事件
+    setupWebViewJavascriptBridge(function(bridge) {
+
+        //背景颜色
+        bridge.registerHandler('ClickTest', function(data, responseCallback) {
+
+            if (data["isOn"] == "1") {
+                $("body").css("backgroundColor", "#000000").css("color", "#666666")
+                $("hr").css("borderColor", "#333333")
+            } else if (data["isOn"] == "0") {
+                $("body").css("backgroundColor", "#ffffff").css("color", "#666666")
+                $("hr").css("borderColor", "#ededed")
+            }
+        })
+
+
+
+        //点赞
+        bridge.registerHandler('ClickSupportHandler', function(data, responseCallback) {
+            console.log("JS Echo called with:", data)
+            responseCallback(data)
+        })
+
+        //字体大小
+        bridge.registerHandler('ChangeFontSizeHandler', function(data, responseCallback) {
+                $("#containerContent").css("fontSize", data["fontsize"] + "px")
+                // document.getElementById("containerContent").style.fontSize = data["fontsize"] + "px";
+
+            })
+
+        //加载更多
+        $("#loadMore").off().on("click",function() {
+            $(this).css("display", "none")
+            $(this).parent().append("<span id = 'loadMoreSpan'>加载中 <i class='fa fa-spin fa-circle-o-notch'></i> </span>")
+            //Ajax
+
+            setTimeout(function() {
+                for (var i = 0; i < 10; i++) {
+                    $("#hfList").append("<div class='hfRow'><div class='hfRowHeadIcon'><div class='im-com'></div> </div><div class='hfRowCell'></div><div class='hfRowContent'><p class='hfRowContent1'>" + "Methodname" + "<span><a class ='zhan upZhan'><i class='fa fa-thumbs-o-up'></i><span>0</span></a><a class='downZhan'><i class='fa fa-thumbs-o-down'></i><span>0</span></a></span></p><p class='hfRowContent2'>" + "四书五经传肠过~" + "</p><p class='hfRowContent3'>" + "两分钟前" + "<a>回复</a></p></div></div>");
+                };
+                $("#loadMoreSpan").fadeIn('slow').remove();
+                $("#loadMore").css("display", "block").text("已没有更多");
+                addZhanClick(bridge);
+            }, 2000)
+        })
+
+		//绑定回复接收消息
+    	bridge.registerHandler('RestoreHandler', function(data, responseCallback) {
+            //responseCallback(data)
+            $("#hfList").prepend("<div class='hfRow'><div class='hfRowHeadIcon'><div class='im-com'></div> </div><div class='hfRowCell'></div><div class='hfRowContent'><p class='hfRowContent1'>" + data["userName"] + "<span><a class ='zhan upZhan'><i class='fa fa-thumbs-o-up'></i><span>0</span></a><a class='downZhan'><i class='fa fa-thumbs-o-down'></i><span>0</span></a></span></p><p class='hfRowContent2'>" + data["text"] + "</p><p class='hfRowContent3'>" + data["time"] + "<a>回复</a></p></div></div>");
+            //添加点赞事件
+            addZhanClick(bridge);
+        })
+                                 
+         //相关新闻跳转
+         $(".containerNews").off().on("click",function(){
+          bridge.callHandler('GotoAboutNewsDetailHandler', {
+             'key': 'value'
+             }, function responseCallback(responseData) {});
+          });
+
+        addZhanClick(bridge);
+
+    })
+    </script>
+    <script>
+
+    //添加事件
+    function addZhanClick(bridge) {
+
+    	
+    	$('a.zhan').off().on("click",function() {
+            $("#zhan").remove();
+            if ($(this).find('i').css("color").toString() == "rgb(255, 0, 0)") {
+                $(this).find('i').css("color", "rgb(170, 170, 170)")
+                var left = parseInt($(this).offset().left) + 10,
+                    top = parseInt($(this).offset().top) - 10,
+                    obj = $(this);
+                $(this).append('<div id="zhan"><b>-1<\/b></\div>');
+                $('#zhan').css({
+                    'position': 'absolute',
+                    'z-index': '1',
+                    'color': '#C30',
+                    'left': left + 'px',
+                    'top': top + 'px'
+                }).animate({
+                    top: top + 10,
+                    left: left + 10
+                }, 'slow', function() {
+                    $(this).fadeIn('slow').remove();
+                    var Num = parseInt(obj.find('span').text());
+                    Num--;
+                    obj.find('span').text(Num);
+                });
+
+            } else {
+                $(this).find('i').css("color", "rgb(255, 0, 0)")
+                var left = parseInt($(this).offset().left) + 10,
+                    top = parseInt($(this).offset().top) - 10,
+                    obj = $(this);
+                $(this).append('<div id="zhan"><b>+1<\/b></\div>');
+                $('#zhan').css({
+                    'position': 'absolute',
+                    'z-index': '1',
+                    'color': '#C30',
+                    'left': left + 'px',
+                    'top': top + 'px'
+                }).animate({
+                    top: top - 10,
+                    left: left + 10
+                }, 'slow', function() {
+                    $(this).fadeIn('slow').remove();
+                    var Num = parseInt(obj.find('span').text());
+                    Num++;
+                    obj.find('span').text(Num);
+                });
+            }
+
+            bridge.callHandler('ClickSupportHandler', {
+                'key': 'value'
+            }, function responseCallback(responseData) {
+                console.log("JS received response:", responseData)
+            })
+
+
+            return false;
+        });
+        $('a.downZhan').off().on("click",function() {
+            $("#downzhan").remove();
+            if ($(this).find('i').css("color").toString() == "rgb(0, 0, 255)") {
+                $(this).find('i').css("color", "rgb(170, 170, 170)")
+                var left = parseInt($(this).offset().left) + 10,
+                    top = parseInt($(this).offset().top) - 10,
+                    obj = $(this);
+                $(this).append('<div id="downzhan"><b>-1<\/b></\div>');
+                $('#downzhan').css({
+                    'position': 'absolute',
+                    'z-index': '1',
+                    'color': '#C30',
+                    'left': left + 'px',
+                    'top': top + 'px'
+                }).animate({
+                    top: top + 10,
+                    left: left + 10
+                }, 'slow', function() {
+                    $(this).fadeIn('slow').remove();
+                    var Num = parseInt(obj.find('span').text());
+                    Num--;
+                    obj.find('span').text(Num);
+                });
+
+            } else {
+                $(this).find('i').css("color", "rgb(0, 0, 255)")
+                var left = parseInt($(this).offset().left) + 10,
+                    top = parseInt($(this).offset().top) - 10,
+                    obj = $(this);
+                $(this).append('<div id="downzhan"><b>+1<\/b></\div>');
+                $('#downzhan').css({
+                    'position': 'absolute',
+                    'z-index': '1',
+                    'color': '#C30',
+                    'left': left + 'px',
+                    'top': top + 'px'
+                }).animate({
+                    top: top - 10,
+                    left: left + 10
+                }, 'slow', function() {
+                    $(this).fadeIn('slow').remove();
+                    var Num = parseInt(obj.find('span').text());
+                    Num++;
+                    obj.find('span').text(Num);
+                });
+            }
+
+            bridge.callHandler('ClickSupportHandler', {
+                'key': 'value'
+            }, function responseCallback(responseData) {
+                console.log("JS received response:", responseData)
+            })
+
+            return false;
+        });
+		//回复
+        $(".hfRowContent3>a").off().on("click",function() {
+            bridge.callHandler('RestoreHandler', {
+                'key': 'value'
+            }, function responseCallback(responseData) {
+                console.log("JS received response:", responseData)
+            })
+        });
+    }
+
+    </script>
+
+    </html>

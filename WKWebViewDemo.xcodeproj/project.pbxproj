@@ -13,6 +13,11 @@
 		99736D261D66DD55000B79A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99736D241D66DD55000B79A4 /* Main.storyboard */; };
 		99736D281D66DD55000B79A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99736D271D66DD55000B79A4 /* Assets.xcassets */; };
 		99736D2B1D66DD55000B79A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99736D291D66DD55000B79A4 /* LaunchScreen.storyboard */; };
+		99736D3B1D66DD82000B79A4 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 99736D341D66DD82000B79A4 /* WebViewJavascriptBridge.m */; };
+		99736D3C1D66DD82000B79A4 /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 99736D361D66DD82000B79A4 /* WebViewJavascriptBridge_JS.m */; };
+		99736D3D1D66DD82000B79A4 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 99736D381D66DD82000B79A4 /* WebViewJavascriptBridgeBase.m */; };
+		99736D3E1D66DD82000B79A4 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 99736D3A1D66DD82000B79A4 /* WKWebViewJavascriptBridge.m */; };
+		99736D401D66DECA000B79A4 /* Test.html in Resources */ = {isa = PBXBuildFile; fileRef = 99736D3F1D66DECA000B79A4 /* Test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		99736D271D66DD55000B79A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99736D2A1D66DD55000B79A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99736D2C1D66DD55000B79A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99736D331D66DD82000B79A4 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		99736D341D66DD82000B79A4 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		99736D351D66DD82000B79A4 /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		99736D361D66DD82000B79A4 /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		99736D371D66DD82000B79A4 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		99736D381D66DD82000B79A4 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		99736D391D66DD82000B79A4 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		99736D3A1D66DD82000B79A4 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		99736D3F1D66DECA000B79A4 /* Test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 		99736D1A1D66DD55000B79A4 /* WKWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				99736D3F1D66DECA000B79A4 /* Test.html */,
+				99736D321D66DD82000B79A4 /* WebViewJavascriptBridge */,
 				99736D1E1D66DD55000B79A4 /* AppDelegate.h */,
 				99736D1F1D66DD55000B79A4 /* AppDelegate.m */,
 				99736D211D66DD55000B79A4 /* ViewController.h */,
@@ -77,6 +93,21 @@
 				99736D1C1D66DD55000B79A4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99736D321D66DD82000B79A4 /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				99736D331D66DD82000B79A4 /* WebViewJavascriptBridge.h */,
+				99736D341D66DD82000B79A4 /* WebViewJavascriptBridge.m */,
+				99736D351D66DD82000B79A4 /* WebViewJavascriptBridge_JS.h */,
+				99736D361D66DD82000B79A4 /* WebViewJavascriptBridge_JS.m */,
+				99736D371D66DD82000B79A4 /* WebViewJavascriptBridgeBase.h */,
+				99736D381D66DD82000B79A4 /* WebViewJavascriptBridgeBase.m */,
+				99736D391D66DD82000B79A4 /* WKWebViewJavascriptBridge.h */,
+				99736D3A1D66DD82000B79A4 /* WKWebViewJavascriptBridge.m */,
+			);
+			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,7 @@
 				99736D2B1D66DD55000B79A4 /* LaunchScreen.storyboard in Resources */,
 				99736D281D66DD55000B79A4 /* Assets.xcassets in Resources */,
 				99736D261D66DD55000B79A4 /* Main.storyboard in Resources */,
+				99736D401D66DECA000B79A4 /* Test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				99736D231D66DD55000B79A4 /* ViewController.m in Sources */,
+				99736D3B1D66DD82000B79A4 /* WebViewJavascriptBridge.m in Sources */,
 				99736D201D66DD55000B79A4 /* AppDelegate.m in Sources */,
 				99736D1D1D66DD55000B79A4 /* main.m in Sources */,
+				99736D3D1D66DD82000B79A4 /* WebViewJavascriptBridgeBase.m in Sources */,
+				99736D3C1D66DD82000B79A4 /* WebViewJavascriptBridge_JS.m in Sources */,
+				99736D3E1D66DD82000B79A4 /* WKWebViewJavascriptBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360haoshidai.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360haoshidai.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
